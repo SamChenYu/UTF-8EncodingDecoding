@@ -61,7 +61,18 @@
 
     move $a2, $t0
 
+    li $v0, 1            # System call code for print_int
+    move $a0, $a2        # Move the value from $a2 to $a0
+    syscall              # Make the system call to print_int
 
+    # Print a newline for better formatting
+    li $v0, 4            # System call code for print_str
+    la $a0, newline      # Load the address of the newline string
+    syscall              # Make the system call to print_str
+
+    # Exit the program
+    li $v0, 10           # System call code for exit
+    syscall              # Make the system call to exit
 
 
 
