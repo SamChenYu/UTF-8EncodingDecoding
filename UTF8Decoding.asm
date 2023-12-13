@@ -3,15 +3,10 @@
 
 .text
 
-# Carry out the decoding (UTF-8 to code point) as on line 3 of the table (3 byte UTF-8)
-# For the translation you are given your input in register $a3, and return your result in register $a2.
 
-# 1
-# Convert from hexadecimal to decimal
 # 8A9E = 1000101010011110 = 1000 101010 011110
 
 # 3-byte UTF-8 sequence: 1110zzzz 10yyyyyy 10xxxxxx
-# 2
 # 1110zzzz 10yyyyyy 10xxxxxx
 # FILL IN THE BITS
 # 11101000  10101010    10011110
@@ -51,7 +46,7 @@
 
 
 
-    #concatenate the remaining 3 strings
+    #concatenate the remaining 3 bit strings
     sll $t0, $t0, 8
     or $t0, $t0, $t1
 
