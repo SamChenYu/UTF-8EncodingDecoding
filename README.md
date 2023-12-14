@@ -1,4 +1,4 @@
-# UTF8Decoding
+# UTF-8Decoding
 UTF-8 Decoding in MIPS Assembly Language Using SRL (Shift Right Local) / SLL (Shift Left Local) Bit Manipulation
 
 Follows the 3-byte UTF-8 sequence: 1110zzzz 10yyyyyy 10xxxxxx  
